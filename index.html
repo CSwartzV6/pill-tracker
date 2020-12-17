@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="./etc.css">
+<script src="logic.js"></script>
+<script src="https://kit.fontawesome.com/4495757f52.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="intro"><br />
+        <p><i class="fas fa-pills fa-6x"></i></p>
+        <h1>Pill Tracker</h1>
+        <hr class="theBar"/>
+        </div>
+        <div class="main">
+    <h2>Last Taken:</h2><p id="demo"><script>var onLoad = document.write(localStorage.timeTakenLast);</script>
+    <h2>Pills Remaining:</h2><div id="result" class="display-4"><script>document.write(localStorage.pillsCount);</script>
+    </div><br />
+    <p><button class="btn btn-primary" role="button" style="width: 90%;" onclick="pillsCounterMinus()">Take Dose</button></p>
+    
+<p class="small">You may close this window and return to it again later.</p>
+<div class="navbar">
+    <a href="#" class="active">Home</a>
+    <a href="#">Copyright Cody Swartz</a>
+    <a href="settings.html">Settings</a>
+  </div>
+</div>
+</body>
+</html>
