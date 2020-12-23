@@ -4,7 +4,11 @@ if (typeof(Storage) !== "undefined") {
   } else {
     document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
   }
-  
+  function pillsCountStart(pillsCount) {
+    if (isNaN(pillsCount) {
+      pillsCount = 0;
+    }
+  }
   function pillsCounter() {
     if (typeof(Storage) !== "undefined") {
       if (localStorage.pillsCount) {
